@@ -16,11 +16,11 @@ const Purchase = () => {
                 <img src={product.img} alt="" />
             </div>
             <div className='mb-96'>
-                <p>Product ID: {product._id}</p>
-                <p>{product.name}</p>
-                <p>Price: ${product.price}</p>
-                <p>Available: {product.quantity}</p>
-                <p>Minimun Order: {product.min_order}</p>
+                <p className='text-secondary'><small>Product ID: {product._id}</small></p>
+                <p className='text-primary font-semibold'>{product.name}</p>
+                <p className='font-semibold'>Price: ${product.price}</p>
+                <p className='font-semibold'>Available: {product.quantity}</p>
+                <p className='font-semibold'>Minimum Order: {product.min_order}</p>
             </div>
         </div>
     );

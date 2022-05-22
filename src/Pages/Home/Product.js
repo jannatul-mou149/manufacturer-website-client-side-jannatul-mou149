@@ -19,7 +19,7 @@ const Product = ({ product }) => {
                 <p>Price: ${price}</p>
                 <p>Minimun Order: {min_order}</p>
                 <div className="card-actions justify-end">
-                    <button onClick={() => navigateToPurchase(_id)} className="btn btn-primary">Buy Now</button>
+                    <button onClick={() => navigateToPurchase(_id)} className="btn btn-primary">Order Now</button>
                 </div>
             </div>
         </div>
