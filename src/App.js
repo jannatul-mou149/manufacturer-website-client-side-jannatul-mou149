@@ -10,6 +10,7 @@ import About from './Pages/About/About';
 import Blogs from './Pages/Blogs/Blogs';
 import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 import Footer from './Pages/Shared/Footer';
+import Purchase from './Pages/Purchase/Purchase';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
+        <Route path='/products/:id' element={<RequireAuth><Purchase></Purchase></RequireAuth>}></Route>
         <Route path="about" element={<RequireAuth><About></About></RequireAuth>}></Route>
         <Route path="login" element={<Login></Login>}></Route>
         <Route path="signup" element={<Signup></Signup>}></Route>
