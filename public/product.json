@@ -1,0 +1,65 @@
+[
+    {
+        "_id": "1",
+        "name": "MSI H510M PRO-E Intel 10th Gen and 11th Gen Micro-ATX Motherboard",
+        "price": 850,
+        "min_order": 200,
+        "quantity": 10530,
+        "desc": "The MSI PRO series helps users work smarter by delivering an efficient and productive experience. Featuring stable functionality and high-quality",
+        "img": "https://www.startech.com.bd/image/cache/catalog/motherboard/msi/h510m-pro-e/h510m-pro-e-01-500x500.jpg"
+    },
+    {
+        "_id": "2",
+        "name": "ASRock B560M Steel Legend 10th and 11th Gen Micro ATX Motherboard",
+        "price": 1430,
+        "min_order": 200,
+        "quantity": 130530,
+        "desc": "ASRock B560M Steel Legend Micro ATX Motherboard supports 10th Gen Intel® Core™ Processors and 11th Gen Intel Core Processors",
+        "img": "https://www.pqs.com.bd/image/cache/catalog/products/motherboard/Asrock/ASRock%20B560M%20Steel%20Legend%2010th%20and%2011th%20Gen%20Micro%20ATX%20Motherboard-500x500.jpg"
+    },
+    {
+        "_id": "3",
+        "name": "Asus Tuf Gaming Geforce RTX 3080 10GB Graphics Card",
+        "price": 2.3,
+        "min_order": 400,
+        "quantity": 23030,
+        "desc": "The Asus TUF Gaming GeForce RTX 3080 V2 OC Edition 10GB GDDR6X Graphics Card NVIDIA features Ampere Streaming Multiprocessors.",
+        "img": "https://www.ultratech.com.bd/wp-content/uploads/2021/12/Asus-Tuf-Gaming-Geforce-RTX-3080-10GB-Graphics-Card-1.jpg"
+    },
+    {
+        "_id": "4",
+        "name": "Gigabyte GeForce GTX 1050 Ti D5 4GB GDDR5 Graphics Card",
+        "price": 7,
+        "min_order": 250,
+        "quantity": 30530,
+        "desc": "Gigabyte GeForce GTX 1050 Ti D5 4Gb (rev1.0/ rev1.1/ rev1.2) GDDR5 Graphic CardGigabyte GeForce GTX 1050 Ti D5 4Gb (rev1.0/ rev1.1/ rev1.2) ",
+        "img": "https://www.startech.com.bd/image/cache/catalog/graphics-card/gigabyte/gtx-1050-ti-d5/gtx-1050-ti-d5-01-500x500.jpg"
+    },
+    {
+        "_id": "5",
+        "name": "Thermaltake Smart BX1 RGB 550W Power Supply",
+        "price": 70,
+        "min_order": 80,
+        "quantity": 3130,
+        "desc": "Smart BX1 RGB series is built to deliver 80 PLUS Bronze efficiency. It is mainly available in 550W, 650W, and 750W models. Now mainly talk about 550W model.",
+        "img": "https://www.startech.com.bd/image/cache/catalog/component/power-supply/thermaltake/smart/bx1-550w/bx1-550w-1-500x500.jpg"
+    },
+    {
+        "_id": "6",
+        "name": "Gigabyte 256GB NVMe M.2 SSD",
+        "price": 120,
+        "min_order": 100,
+        "quantity": 2530,
+        "desc": "The Host Memory Buffer (HMB) feature utilizes the DMA (Direct Memory Access) of PCI Express to allow SSDs to use some of the DRAM on a PC system.",
+        "img": "https://www.startech.com.bd/image/cache/catalog/ssd/gigabyte/256gb-m2/256gb-m2-4-500x500.jpg"
+    },
+    {
+        "_id": "7",
+        "name": "Western Digital 1TB Blue Desktop HDD",
+        "price": 80,
+        "min_order": 200,
+        "quantity": 12530,
+        "desc": "WD Blue Solid performance and reliability for everyday computing, WD Blue hard drives deliver solid performance and reliability for desktops PCs, external, enclosures and for certain industrial applications.",
+        "img": "https://www.startech.com.bd/image/cache/catalog/HDD/Western%20Digital/WD%20INT%20Blue%201TB-500x500.jpg"
+    }
+]
