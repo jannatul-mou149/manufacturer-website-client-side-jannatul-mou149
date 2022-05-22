@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className='min-h-screen'>
+        <div>
             <div className="carousel w-full">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src="https://storage-asset.msi.com/event/2019/mystic-light-rgb-pc/images/partner01.jpg" className="w-full" alt='' />

@@ -4,7 +4,7 @@ import Product from './Product';
 const Products = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('product.json')
+        fetch('http://localhost:5000/products')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
@@ -16,7 +16,7 @@ const Products = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-20'>
                 {
-                    products.map(product => <Product
+                    products.slice(0, 6).map(product => <Product
                         key={products._id}
                         product={product}
                     ></Product>)
