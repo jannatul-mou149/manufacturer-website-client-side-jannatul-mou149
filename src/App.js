@@ -1,5 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { Route, Routes } from 'react-router-dom';
 import Login from './Pages/Login/Login';
 import Navbar from './Pages/Shared/Navbar';
@@ -15,6 +16,7 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrders from './Pages/Dashboard/MyOrders';
 import MyReviews from './Pages/Dashboard/MyReviews';
 import Review from './Pages/Dashboard/Review';
+import Users from './Pages/Dashboard/Users';
 
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
         <Route path="dashboard" element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}>
           <Route index element={<RequireAuth><MyOrders></MyOrders></RequireAuth>}></Route>
           <Route path="reviews" element={<RequireAuth><MyReviews></MyReviews></RequireAuth>}></Route>
+          <Route path='users' element={<Users></Users>}></Route>
         </Route>
         <Route path="login" element={<Login></Login>}></Route>
         <Route path="review" element={<Review></Review>}></Route>
@@ -36,6 +39,7 @@ function App() {
         <Route path="myportfolio" element={<MyPortfolio></MyPortfolio>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }
