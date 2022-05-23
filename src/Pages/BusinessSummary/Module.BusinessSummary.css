@@ -66,3 +66,31 @@
     z-index: -1;
     object-fit: cover;
 }
+
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+.numbers .number i {
+    font-size: 3rem;
+    color: #7845F9;
+    margin-bottom: 10px;
+}
+
+.numbers .number h6 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(56, 55, 55);
+    margin-bottom: 10px;
+}
+
+.numbers .number h5 {
+    font-size: 1rem;
+    color: #7845F9;
+    margin-bottom: 10px;
+}
