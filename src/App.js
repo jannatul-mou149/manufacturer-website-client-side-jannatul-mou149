@@ -11,6 +11,11 @@ import Blogs from './Pages/Blogs/Blogs';
 import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 import Footer from './Pages/Shared/Footer';
 import Purchase from './Pages/Purchase/Purchase';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import MyOrders from './Pages/Dashboard/MyOrders';
+import MyReviews from './Pages/Dashboard/MyReviews';
+import Review from './Pages/Dashboard/Review';
+
 
 function App() {
   return (
@@ -20,7 +25,12 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path='/products/:id' element={<RequireAuth><Purchase></Purchase></RequireAuth>}></Route>
         <Route path="about" element={<RequireAuth><About></About></RequireAuth>}></Route>
+        <Route path="dashboard" element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}>
+          <Route index element={<RequireAuth><MyOrders></MyOrders></RequireAuth>}></Route>
+          <Route path="reviews" element={<RequireAuth><MyReviews></MyReviews></RequireAuth>}></Route>
+        </Route>
         <Route path="login" element={<Login></Login>}></Route>
+        <Route path="review" element={<Review></Review>}></Route>
         <Route path="signup" element={<Signup></Signup>}></Route>
         <Route path="blogs" element={<Blogs></Blogs>}></Route>
         <Route path="myportfolio" element={<MyPortfolio></MyPortfolio>}></Route>
