@@ -25,7 +25,7 @@ const AddReview = () => {
         <div className='m-5'>
             <h1 className='font-bold mb-5'>Add Your Valuable Review</h1>
             <div className='mx-auto'>
-                <form className='flex flex-col' onSubmit={handleSubmit(onSubmit)}>
+                <form className='flex flex-col' style={{ "position": "relative", "left": "50%", "transform": "translateX(-25%)" }} onSubmit={handleSubmit(onSubmit)}>
                     <input className='w-2/4 mb-8' placeholder='Your Name' type="text" {...register("name")} required />
                     <input className='w-2/4 mb-8' placeholder='Give number of stars' max="5" min="1" type="number" {...register("rating")} required />
                     <input className='w-2/4 mb-8' placeholder='Your Location' type="text" {...register("location")} required />
