@@ -4,3 +4,10 @@ form input {
     border-radius: 10px;
     border: 1px solid rgb(218, 55, 202);
 }
+
+form textarea {
+    padding-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(218, 55, 202);
+}

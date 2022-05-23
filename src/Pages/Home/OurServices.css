@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: min(1200px, 75%);
+    margin: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.services-sec .heading h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(211, 211, 211);
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.services .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 180px;
+    max-width: 200px;
+}
+
+.services .service .icon {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.services .service .icon i {
+    font-size: 1.5rem;
+}
+
+.services .service1 .icon {
+    background: #EAF9FC;
+}
+
+.services .service1 .icon i {
+    color: #79D5EE;
+}
+
+.services .service2 .icon {
+    background: #EBFDF4;
+}
+
+.services .service2 .icon i {
+    color: #78EEB4;
+}
+
+.services .service3 .icon {
+    background: #FCE7F1;
+}
+
+.services .service3 .icon i {
+    color: #EF77AD;
+}
+
+.services .service4 .icon {
+    background: #FCF2EB;
+}
+
+.services .service4 .icon i {
+    color: #EEAD78;
+}
+
+
+.services .service .title h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #3d3d3d;
+    margin: 10px 0;
+}
+
+.services .service .des p {
+    font-size: .9rem;
+    color: #757575;
+}

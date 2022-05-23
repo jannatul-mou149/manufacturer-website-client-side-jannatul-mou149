@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import Review from './Review';
 
 const MyReviews = () => {
@@ -7,7 +6,7 @@ const MyReviews = () => {
 
 
     useEffect(() => {
-        fetch('review.json')
+        fetch('http://localhost:5000/reviews')
             .then(res => res.json())
             .then(data => setReviews(data));
     }, [])

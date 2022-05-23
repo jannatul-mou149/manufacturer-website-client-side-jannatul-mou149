@@ -32,8 +32,8 @@ const AddItem = () => {
                     <input className='w-2/4 mb-8' placeholder='Product Name' type="text" {...register("name")} required />
                     <input className='w-2/4 mb-8' value={user?.email} placeholder='Your Email' type="email" {...register("email")} required readOnly />
                     <input className='w-2/4 mb-8' placeholder='Price' type="text" {...register("price")} required />
-                    <input className='w-2/4 mb-8' placeholder='Quantity' type="number" {...register("quantity")} required />
-                    <input className='w-2/4 mb-8' placeholder='Minimun Order Amount' type="number" {...register("min_order")} required />
+                    <input className='w-2/4 mb-8' placeholder='Quantity' min="50" type="number" {...register("quantity")} required />
+                    <input className='w-2/4 mb-8' placeholder='Minimun Order Amount' min="100" type="number" {...register("min_order")} required />
                     <input className='w-2/4 mb-8' placeholder='Photo URL' type="text" {...register("img")} required />
                     <input className='w-2/4 mb-8' placeholder='Description' {...register("desc")} required />
                     <input className='w-2/4' type="submit" value="Add Product" />
