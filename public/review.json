@@ -1,74 +1,50 @@
 [
     {
         "_id": 1,
-        "name": "Abu Kawsar",
-        "ratting": 4,
-        "location": "california",
+        "name": "Jannatul Ferdousi",
+        "rating": 4,
+        "location": "New York",
         "review": "This is a great source of premium products with worldwide delivery and 24/7 customer support!.",
-        "img": "https://i.ibb.co/NZqmGjN/classes-item-1.jpg"
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8f7j_I_43_SoexE6xPizfm-6LVevS1cqblr5KIjomeHja26fkR6CUS4Go1C7R_bB5S0I&usqp=CAU"
     },
     {
         "_id": 2,
-        "name": "Abu Kawsar",
-        "ratting": 4,
-        "location": "california",
+        "name": "Sharmin Akter",
+        "rating": 4,
+        "location": "New York",
         "review": "This is a great source of premium products with worldwide delivery and 24/7 customer support!.",
-        "img": "https://i.ibb.co/NZqmGjN/classes-item-1.jpg"
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8f7j_I_43_SoexE6xPizfm-6LVevS1cqblr5KIjomeHja26fkR6CUS4Go1C7R_bB5S0I&usqp=CAU"
     },
     {
         "_id": 3,
-        "name": "Abu Kawsar",
-        "ratting": 4,
-        "location": "california",
+        "name": "Farjana Yasmin",
+        "rating": 4,
+        "location": "New York",
         "review": "This is a great source of premium products with worldwide delivery and 24/7 customer support!.",
-        "img": "https://i.ibb.co/NZqmGjN/classes-item-1.jpg"
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8f7j_I_43_SoexE6xPizfm-6LVevS1cqblr5KIjomeHja26fkR6CUS4Go1C7R_bB5S0I&usqp=CAU"
     },
     {
         "_id": 4,
-        "name": "Abu Kawsar",
-        "ratting": 4,
-        "location": "california",
+        "name": "Abu Al Nasir",
+        "rating": 4,
+        "location": "New York",
         "review": "This is a great source of premium products with worldwide delivery and 24/7 customer support!.",
-        "img": "https://i.ibb.co/NZqmGjN/classes-item-1.jpg"
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8f7j_I_43_SoexE6xPizfm-6LVevS1cqblr5KIjomeHja26fkR6CUS4Go1C7R_bB5S0I&usqp=CAU"
     },
     {
         "_id": 5,
-        "name": "Abu Kawsar",
-        "ratting": 4,
-        "location": "california",
+        "name": "Soyeb Mohammad",
+        "rating": 4,
+        "location": "New York",
         "review": "This is a great source of premium products with worldwide delivery and 24/7 customer support!.",
-        "img": "https://i.ibb.co/NZqmGjN/classes-item-1.jpg"
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8f7j_I_43_SoexE6xPizfm-6LVevS1cqblr5KIjomeHja26fkR6CUS4Go1C7R_bB5S0I&usqp=CAU"
     },
     {
         "_id": 6,
-        "name": "Abu Kawsar",
-        "ratting": 4,
-        "location": "california",
+        "name": "Sporsho Chowdhury",
+        "rating": 4,
+        "location": "New York",
         "review": "This is a great source of premium products with worldwide delivery and 24/7 customer support!.",
-        "img": "https://i.ibb.co/NZqmGjN/classes-item-1.jpg"
-    },
-    {
-        "_id": 7,
-        "name": "Abu Kawsar",
-        "ratting": 4,
-        "location": "california",
-        "review": "This is a great source of premium products with worldwide delivery and 24/7 customer support!.",
-        "img": "https://i.ibb.co/NZqmGjN/classes-item-1.jpg"
-    },
-    {
-        "_id": 8,
-        "name": "Abu Kawsar",
-        "ratting": 4,
-        "location": "california",
-        "review": "This is a great source of premium products with worldwide delivery and 24/7 customer support!.",
-        "img": "https://i.ibb.co/NZqmGjN/classes-item-1.jpg"
-    },
-    {
-        "_id": 9,
-        "name": "Abu Kawsar",
-        "ratting": 4,
-        "location": "california",
-        "review": "This is a great source of premium products with worldwide delivery and 24/7 customer support!.",
-        "img": "https://i.ibb.co/NZqmGjN/classes-item-1.jpg"
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8f7j_I_43_SoexE6xPizfm-6LVevS1cqblr5KIjomeHja26fkR6CUS4Go1C7R_bB5S0I&usqp=CAU"
     }
 ]
