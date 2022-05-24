@@ -32,7 +32,7 @@ const Purchase = () => {
         })
             .then(res => res.json())
             .then(data => console.log(data))
-        toast.success('Successfully Place your Order. Do your payment')
+        toast.success('Successfully Placed your Order. Please Do Payment for your order')
         reset()
     };
     // if(errors) console.log(errors);
