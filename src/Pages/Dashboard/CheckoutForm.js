@@ -7,8 +7,10 @@ const CheckoutForm = ({ order }) => {
     const elements = useElements();
     const [clientSecret, setClientSecret] = useState('');
     const [success, setSuccess] = useState('');
+    const [processing, setProcessing] = useState(false);
+    const [transactionId, setTransactionId] = useState('');
     const [cardError, setCardError] = useState('');
-    const { total_price, name, email, productName } = order;
+    const { _id, total_price, name, email } = order;
 
     useEffect(() => {
         fetch('http://localhost:5000/create-payment-intent', {
@@ -42,12 +44,10 @@ const CheckoutForm = ({ order }) => {
                 card
             },
         );
-        if (error) {
-            setCardError(error?.message)
-        }
-        else {
-            setCardError('');
-        }
+        setCardError(error?.message || '')
+        setSuccess('');
+        setProcessing(true);
+
         //confirming card payment
         const { paymentIntent, error: intentError } = await stripe.confirmCardPayment(
             clientSecret,
@@ -63,11 +63,30 @@ const CheckoutForm = ({ order }) => {
         );
         if (intentError) {
             setCardError(intentError?.message);
-            setSuccess('');
+            setProcessing(false);
         }
         else {
             setCardError('');
+            setTransactionId(paymentIntent.id);
             setSuccess('Congratulations! Your payment is recieved.');
+
+            //Storing payment in mongodb
+            const payment = {
+                order: _id,
+                transactionId: paymentIntent.id
+            }
+            fetch(`http://localhost:5000/new-order/${_id}`, {
+                method: 'PATCH',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(payment)
+            })
+                .then(res => res.json())
+                .then(data => {
+                    setProcessing(false);
+                    console.log(data);
+                })
         }
     }
     return (
@@ -97,7 +116,10 @@ const CheckoutForm = ({ order }) => {
                 cardError && <p className='text-error'>{cardError}</p>
             }
             {
-                success && <p className='text-success'>{success}</p>
+                success && <div className='text-success font-semibold'>
+                    <p>{success}</p>
+                    <small className='text-cyan-500'>Transaction ID: {transactionId}</small>
+                </div>
             }
         </>
     );
