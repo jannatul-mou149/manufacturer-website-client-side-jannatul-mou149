@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from "../../firebase.init";
+import { toast } from 'react-toastify';
 
 
 const Purchase = () => {
@@ -31,12 +32,13 @@ const Purchase = () => {
         })
             .then(res => res.json())
             .then(data => console.log(data))
+        toast.success('Successfully Place your Order. Do your payment')
         reset()
     };
     // if(errors) console.log(errors);
     return (
-        <div className="px-2">
-            <h3 className="text-5xl text-center  font-bold  text-success py-12 px-4">
+        <div className="px-2 mb-40">
+            <h3 className="text-5xl text-center  font-bold  text-primary py-12 px-4">
                 Your Desire Product
             </h3>
 
@@ -45,26 +47,26 @@ const Purchase = () => {
                     <img className="p-4" src={img} alt="Album" />
                 </figure>
                 <div className="card-body flex items-center  justify-center">
-                    <h2 className="card-title text-amber-900">{productName}</h2>
+                    <h2 className="card-title text-amber-600">{productName}</h2>
                     <div className="card-actions items-center justify-around">
                         <div>
                             <p className=" decoration-sky-500">
                                 Price: ${price}
-                                <sub className="text-[#FF0000]"> /piece</sub>
+                                <sub className="text-secondary"> /piece</sub>
                             </p>
                         </div>
                         <div className="flex gap-4 py-2">
                             <div
-                                className="badge badge-outline tooltip text-white bg-[#6a4f64]"
+                                className="badge badge-outline tooltip text-white bg-[#d26833]"
                                 data-tip="Min order quantity"
                             >
-                                Min: {minQuantity}
+                                Min Order : {minQuantity}
                             </div>
                             <div
-                                className="badge badge-outline tooltip text-white bg-[#6a4f64]"
+                                className="badge badge-outline tooltip text-white bg-[#2b9e4a]"
                                 data-tip="Available quantity"
                             >
-                                Stock : {stockQuantity}
+                                In Stock : {stockQuantity}
                             </div>
                         </div>
                     </div>
@@ -98,7 +100,7 @@ const Purchase = () => {
                             <input  {...register("phone", { required: true })} placeholder="Phone" type="text" className="input input-bordered " />
                             <button
                                 disabled={quantity < minQuantity || quantity > stockQuantity}
-                                className="btn btn-dark"
+                                className="btn btn-primary"
                             >
                                 Place Order
                             </button>
