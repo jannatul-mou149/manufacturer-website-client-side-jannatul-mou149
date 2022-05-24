@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const Navbar = () => {
-    const [user, loading, error] = useAuthState(auth)
+    const [user, loading, error] = useAuthState(auth);
+    const userName = user?.displayName;
 
     const logout = () => {
         signOut(auth);
@@ -16,15 +17,17 @@ const Navbar = () => {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/blogs">Blogs</Link></li>
         <li><Link to="/myportfolio">My Portfolio</Link></li>
+
         {
             user && <li><Link to="/dashboard">Dashboard</Link></li>
         }
+        <li className='text-violet-500 font-semibold'><Link to="/">{userName}</Link></li>
         <li>{user ? <button className="btn btn-ghost" onClick={logout} >Log Out</button> : <Link to="/login">Login</Link>}</li>
 
     </>
     return (
         <div>
-            <div className="navbar bg-base-200">
+            <div className="navbar text-violet-500">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabindex="0" className="btn btn-ghost lg:hidden">

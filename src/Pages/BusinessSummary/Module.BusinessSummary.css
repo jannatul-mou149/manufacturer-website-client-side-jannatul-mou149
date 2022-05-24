@@ -32,7 +32,7 @@
 .total-delivery .number p {
     margin-top: -20px;
     margin-bottom: 60px;
-    color: #7845F9;
+    color: rgb(139 92 246);
     font-weight: 500;
     font-size: 1.2rem;
 }
@@ -78,7 +78,7 @@
 
 .numbers .number i {
     font-size: 3rem;
-    color: #7845F9;
+    color: rgb(139 92 246);
     margin-bottom: 10px;
 }
 
@@ -91,6 +91,6 @@
 
 .numbers .number h5 {
     font-size: 1rem;
-    color: #7845F9;
+    color: rgb(139 92 246);
     margin-bottom: 10px;
 }
