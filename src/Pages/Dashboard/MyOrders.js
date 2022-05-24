@@ -13,7 +13,23 @@ const MyOrders = () => {
                 .then(data => setOrders(data))
         }
 
-    }, [user])
+    }, [user]);
+    const handleDelete = id => {
+        const proceed = window.confirm('Are you sure?');
+        if (proceed) {
+            const url = `http://localhost:5000/new-order/${id}`;
+            console.log(url);
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data)
+                    const remaining = orders.filter(order => order._id !== id);
+                    setOrders(remaining);
+                })
+        }
+    }
     return (
         <div className='mt-10'>
             <h2 className='mb-4 text-primary font-semibold'>My Order List: {orders.length}</h2>
@@ -30,6 +46,7 @@ const MyOrders = () => {
                             <th>Shipping Address</th>
                             <th>Phone</th>
                             <th>Payment</th>
+                            <th>Cancel Order</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -49,6 +66,7 @@ const MyOrders = () => {
                                         <p>Transaction ID:{order.transactionId} </p>
                                     </div>}
                                 </td>
+                                <td>{(!order.paid) && <button onClick={() => handleDelete(order._id)} className='btn btn-xs btn-error text-white'>Cancel</button>}</td>
                             </tr>)
                         }
                     </tbody>
