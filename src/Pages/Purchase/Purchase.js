@@ -38,19 +38,19 @@ const Purchase = () => {
     // if(errors) console.log(errors);
     return (
         <div className="px-2 mb-40">
-            <h3 className="text-5xl text-center  font-bold  text-primary py-12 px-4">
-                Your Desire Product
+            <h3 className="text-5xl text-center  font-bold  text-indigo-800 py-12 px-4">
+                Your Dream Product
             </h3>
 
             <div className="card max-w-5xl mx-auto md:card-side bg-base-100 shadow-xl lg:flex-row-reverse md:flex-row-reverse">
                 <figure>
                     <img className="p-4" src={img} alt="Album" />
                 </figure>
-                <div className="card-body flex items-center  justify-center">
-                    <h2 className="card-title text-amber-600">{productName}</h2>
+                <div className="card-body flex items-center justify-center">
+                    <h2 className="card-title text-indigo-800">{productName}</h2>
                     <div className="card-actions items-center justify-around">
                         <div>
-                            <p className=" decoration-sky-500">
+                            <p className="text-indigo-700 font-bold">
                                 Price: ${price}
                                 <sub className="text-secondary"> /piece</sub>
                             </p>

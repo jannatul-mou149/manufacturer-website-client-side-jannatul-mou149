@@ -1,5 +1,4 @@
 import React from 'react';
-import bannerImg from '../../Assests/images/bannerImg.jpg';
 const Banner = () => {
     return (
         <div class="hero min-h-screen" style={{
