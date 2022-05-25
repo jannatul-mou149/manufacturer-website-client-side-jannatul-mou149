@@ -9,7 +9,7 @@ const Blogs = () => {
             <div class='blog-posts-wrap'>
                 <div class='post-link'>
                     <div class='post-wrap'>
-                        <div class='post-image'>
+                        <div class='post-image-one'>
                         </div>
 
                         <div class='post-body'>
@@ -42,7 +42,7 @@ const Blogs = () => {
                 </div>
                 <div class='post-link'>
                     <div class='post-wrap'>
-                        <div class='post-image'>
+                        <div class='post-image-two'>
                         </div>
 
                         <div class='post-body'>
@@ -86,7 +86,7 @@ const Blogs = () => {
                 </div>
                 <div class='post-link'>
                     <div class='post-wrap'>
-                        <div class='post-image'>
+                        <div class='post-image-three'>
                         </div>
 
                         <div class='post-body'>
@@ -117,7 +117,7 @@ const Blogs = () => {
                 </div>
                 <div class='post-link'>
                     <div class='post-wrap'>
-                        <div class='post-image'>
+                        <div class='post-image-four'>
                         </div>
 
                         <div class='post-body'>
@@ -133,10 +133,7 @@ const Blogs = () => {
                                 </div>
 
                                 <div class='post-text'>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate dolore
-                                        reprehenderit beatae porro enim excepturi consequuntur doloremque error recusandae
-                                        id! Ratione dolores magnam repellendus commodi tenetur, repellat accusantium non
-                                        tempore.</p>
+                                    <p>In React, whenever a component is rendering either in theMounting phase or in Updating Phase, it always renders all the components that are in its tree. useState is a function that takes the initial state as an argument and returns an array with two items.If we mutate the state directly, it will change the reference of the state in the previous virtual DOM as well. So, React won't be able to see that there is a change of the state and so it won't be reflected in the original DOM until we reload.</p>
                                 </div>
                             </div>
 
@@ -150,7 +147,7 @@ const Blogs = () => {
                 </div>
                 <div class='post-link'>
                     <div class='post-wrap'>
-                        <div class='post-image'>
+                        <div class='post-image-five'>
                         </div>
 
                         <div class='post-body'>

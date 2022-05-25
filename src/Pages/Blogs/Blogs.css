@@ -20,11 +20,11 @@ a {
 
 
 .blog-posts-wrap {
-    width: 100%;
+    width: 800px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 50px 0;
+    margin: 50px auto;
 }
 
 .post-link {
@@ -50,9 +50,41 @@ a {
     box-shadow: 0px 2px 20px rgba(120, 69, 249, 0.4);
 }
 
-.post-image {
+.post-image-one {
+    height: 200px;
+    background: url('../../Assests/images/two.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.post-image-two {
     height: 200px;
     background: url('../../Assests/images/one.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.post-image-three {
+    height: 200px;
+    background: url('../../Assests/images/three.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.post-image-four {
+    height: 200px;
+    background: url('../../Assests/images/four.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.post-image-five {
+    height: 200px;
+    background: url('../../Assests/images/five.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
