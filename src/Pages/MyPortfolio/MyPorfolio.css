@@ -33,14 +33,14 @@ li {
 }
 
 .hero .hero-content .hi {
-    color: #7845F9;
+    color: rgb(76 29 149);
     font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
 .hero .hero-content .name {
-    color: #7845F9;
+    color: rgb(76 29 149);
     font-size: 4rem;
     line-height: 70px;
     font-weight: 600;
@@ -63,7 +63,7 @@ li {
 .hero .hero-content .action-button {
     padding: 15px 25px;
     width: fit-content;
-    border: 2px solid #7845F9;
+    border: 2px solid rgb(76 29 149);
     border-radius: 4px;
     transition: .5s;
     cursor: pointer;
@@ -74,14 +74,14 @@ li {
 }
 
 .hero .hero-content .action-button a {
-    color: #7845F9;
+    color: rgb(76 29 149);
     font-weight: 500;
 }
 
 .hero .hero-content .contact {
     padding: 15px 25px;
     width: fit-content;
-    border: 2px solid #7845F9;
+    border: 2px solid rgb(76 29 149);
     border-radius: 4px;
     transition: .5s;
     cursor: pointer;
@@ -93,7 +93,7 @@ li {
 }
 
 .hero .hero-content .action-button a {
-    color: #7845F9;
+    color: rgb(76 29 149);
     font-weight: 500;
 }
 
@@ -109,12 +109,12 @@ li {
 .sec-title .line {
     height: 2px;
     width: 50px;
-    background: #7845F9;
+    background: rgb(76 29 149);
 }
 
 .sec-title .title {
     font-size: 1.3rem;
-    color: #7845F9;
+    color: rgb(76 29 149);
     font-weight: 500;
 }
 
@@ -133,7 +133,7 @@ li {
     left: 50%;
     width: 2px;
     height: 80%;
-    background: #7845F9;
+    background: rgb(76 29 149);
 }
 
 .timeline ul {
@@ -172,7 +172,7 @@ li {
     height: 10px;
     top: 24px;
     right: -6px;
-    background: #7845F9;
+    background: rgb(76 29 149);
     border-radius: 50%;
     box-shadow: 0 0 0 3px rgba(120, 69, 249, 0.3);
 }
@@ -184,7 +184,7 @@ li {
     height: 10px;
     top: 24px;
     left: -4px;
-    background: #7845F9;
+    background: rgb(76 29 149);
     border-radius: 50%;
     box-shadow: 0 0 0 3px rgba(120, 69, 249, 0.3);
 }
@@ -202,7 +202,7 @@ li {
 }
 
 .timeline ul li .grade span {
-    color: #7845F9;
+    color: rgb(76 29 149);
 }
 
 .timeline ul li .time h4 {
@@ -217,7 +217,7 @@ li {
     right: -285px;
     margin: 0;
     padding: 8px 16px;
-    background: rgba(120, 69, 249, 1);
+    background: rgb(103, 50, 237);
     color: #fff;
     border-radius: 18px;
     box-shadow: 0 0 0 3px rgba(120, 69, 249, 0.3);
@@ -229,7 +229,7 @@ li {
     left: -285px;
     margin: 0;
     padding: 8px 16px;
-    background: rgba(120, 69, 249, 1);
+    background: rgb(101, 50, 230);
     color: #fff;
     border-radius: 18px;
     box-shadow: 0 0 0 3px rgba(120, 69, 249, 0.3);
@@ -307,8 +307,8 @@ li {
 }
 
 .skills .skill-names span:hover {
-    color: #7845F9;
-    border: 2px solid #7845F9;
+    color: rgb(76 29 149);
+    border: 2px solid rgb(76 29 149);
 }
 
 
@@ -345,12 +345,12 @@ li {
 }
 
 .projects .project .info .type {
-    color: #7845F9;
+    color: rgb(76 29 149);
     font-size: .9rem;
 }
 
 .projects .project .info .name {
-    color: #7845F9;
+    color: rgb(76 29 149);
     font-size: 1.5rem;
 }
 
@@ -365,7 +365,7 @@ li {
 }
 
 .projects .project .info .technology {
-    color: #7845F9;
+    color: rgb(76 29 149);
     font-size: .9rem;
     margin-bottom: 5px;
 }
@@ -377,7 +377,7 @@ li {
 }
 
 .projects .project .info .links ul li a {
-    color: #7845F9;
+    color: rgb(76 29 149);
     font-size: 1.2rem;
 }
 

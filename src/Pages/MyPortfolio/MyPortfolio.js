@@ -1,13 +1,15 @@
 import React from 'react';
 import './MyPorfolio.css';
-import one from '../../Assests/images/one.png';
+import project1 from '../../Assests/images/project1.png';
+import project2 from '../../Assests/images/project2.png';
+import project3 from '../../Assests/images/project3.png';
 const MyPortfolio = () => {
     return (
         <div>
             <section class="hero">
                 <div class="container">
                     <div class="hero-content">
-                        <p class="hi">Hi There, I'm </p>
+
                         <h1 class="name">Jannatul Ferdousi <br />
                             <span>I build things for the web</span>
                         </h1>
@@ -107,52 +109,46 @@ const MyPortfolio = () => {
 
                     <div class="projects">
                         <div class="project-1 project">
-                            <img src={one} alt="" />
+                            <img src={project1} alt="" />
                             <div class="info">
                                 <p class="type">Frontend Project</p>
-                                <h3 class="name">Project Name</h3>
-                                <p class="project-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-                                    aperiam natus maxime. Atque aspernatur aut dolores magni temporibus, assumenda amet
-                                    consequatur saepe reprehenderit illum quasi nobis tempora ullam cumque. Ducimus.</p>
-                                <p class="technology">HTML CSS JS React MongoDB</p>
+                                <h3 class="name">Mou Photograpgy</h3>
+                                <p class="project-des">This is a Personal Service Offering Website Created with React.This project includes React Routing and designed with Bootstrap.This project also includes React Firebase Hooks.This project is uthenticated with Google firebase.Gmail Login is also avaiable.</p>
+                                <p class="technology">HTML CSS JS React Firebase</p>
                                 <div class="links">
                                     <ul>
-                                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                                        <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                                        <li><a href="https://github.com/programming-hero-web-course-4/independent-service-provider-jannatul-mou149" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                                        <li><a href="https://assignment-fe0a5.web.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="project-1 project">
-                            <img src={one} alt="" />
+                            <img src={project2} alt="" />
                             <div class="info">
-                                <p class="type">Frontend Project</p>
-                                <h3 class="name">Project Name</h3>
-                                <p class="project-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-                                    aperiam natus maxime. Atque aspernatur aut dolores magni temporibus, assumenda amet
-                                    consequatur saepe reprehenderit illum quasi nobis tempora ullam cumque. Ducimus.</p>
+                                <p class="type">Full Stack Project</p>
+                                <h3 class="name">Auto Moto</h3>
+                                <p class="project-des">This is a Car warehouse management Offering Website Created with React.This project includes React Routing and designed with CSS Framwork Bootstrap.This project also includes React Firebase Hooks, React hooks forms User is authenticated with Google firebase Gmail Login is also avaiable Database is used to integrate client side and for that purpose NodeJs, Express, Mongodb is used Server side is deployed in heroku and client side is deployed in firebase</p>
                                 <p class="technology">HTML CSS JS React MongoDB</p>
                                 <div class="links">
                                     <ul>
-                                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                                        <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                                        <li><a href="https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-jannatul-mou149" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                                        <li><a href="https://automoto-2b5c0.web.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="project-1 project">
-                            <img src={one} alt="" />
+                            <img src={project3} alt="" />
                             <div class="info">
-                                <p class="type">Frontend Project</p>
-                                <h3 class="name">Project Name</h3>
-                                <p class="project-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-                                    aperiam natus maxime. Atque aspernatur aut dolores magni temporibus, assumenda amet
-                                    consequatur saepe reprehenderit illum quasi nobis tempora ullam cumque. Ducimus.</p>
+                                <p class="type">Full Stack Project</p>
+                                <h3 class="name">Dream PC Build</h3>
+                                <p class="project-des">This project is a retail selling website with both user and admin management system. Using this one can easily manage the stock and updates of their company.It is designed for Computer part selling and management system. One can place order and do payment with card. Admin of this website has full control on adding new products, removing any products, removing users , making new admin of this website. It is fully desktop and mobile responsive website.</p>
                                 <p class="technology">HTML CSS JS React MongoDB</p>
                                 <div class="links">
                                     <ul>
-                                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                                        <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                                        <li><a href="https://github.com/programming-hero-web-course1/manufacturer-website-client-side-jannatul-mou149" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                                        <li><a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
