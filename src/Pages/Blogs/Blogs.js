@@ -3,6 +3,9 @@ import './Blogs.css';
 const Blogs = () => {
     return (
         <section class="container blog">
+            <div className='text-center'>
+                <h3 className='text-primary text-3xl font-bold uppercase mt-20'>My Blogs</h3>
+            </div>
             <div class='blog-posts-wrap'>
                 <div class='post-link'>
                     <div class='post-wrap'>
