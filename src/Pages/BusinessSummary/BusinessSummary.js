@@ -26,7 +26,7 @@ const BusinessSummary = () => {
                         <h5>Happy Clients</h5>
                     </div>
                     <div className='number'>
-                        <i class="fa-brands fa-gratipay"></i>
+                        <i class="fa-solid fa-heart"></i>
                         <h6>33k+</h6>
                         <h5>Total Feedback</h5>
                     </div>

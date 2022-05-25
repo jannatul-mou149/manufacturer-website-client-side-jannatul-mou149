@@ -8,7 +8,7 @@ const Product = ({ product }) => {
         navigate(`/products/${id}`);
     }
     return (
-        <div className="card lg:max-w-lg bg-base-100 shadow-xl">
+        <div className="card lg:max-w-lg bg-base-100 shadow-md shadow-violet-200">
             <figure className="px-10 pt-10">
                 <img src={img} alt="Shoes" class="rounded-xl" />
             </figure>
