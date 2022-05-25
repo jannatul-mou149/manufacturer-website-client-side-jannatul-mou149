@@ -59,6 +59,9 @@
     width: 80px;
 }
 
+.brands .img :hover {
+    color: rgb(228, 88, 37);
+}
 
 #map {
     position: absolute;
