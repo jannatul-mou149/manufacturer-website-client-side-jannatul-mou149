@@ -11,12 +11,11 @@ const MyPortfolio = () => {
                         <h1 class="name">Jannatul Ferdousi <br />
                             <span>I build things for the web</span>
                         </h1>
-                        <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus ad voluptatum
-                            libero
-                            obcaecati eos illo error eaque eum iste!</p>
+                        <p class="des">Pursuing BSc in Computer Science and Engineering from Daffodil International University. My goal is to become a web developer.
+                        </p>
 
                         <div class="action-button">
-                            <a href="#about">Check more about me</a>
+                            <a href="https://www.linkedin.com/in/jannatul-ferdousi-mou-0145881a0/" target="_blank">Check more about me</a>
                         </div>
 
                         <div class="contact">
@@ -37,45 +36,45 @@ const MyPortfolio = () => {
                         <ul>
                             <li>
                                 <div class="content">
-                                    <h3>Primary School name</h3>
-                                    <p>Your School Name</p>
-                                    <p class="grade"><span>Grade:</span> .... </p>
+                                    <h3>Tiny Tots Preparatory School</h3>
+                                    <p> Bhajahari Saha Street, Dhaka</p>
+                                    <p class="grade"><span>Grade:</span> 5.00 </p>
                                 </div>
                                 <div class="time">
-                                    <h4>January 2018 - December 2022</h4>
+                                    <h4>January 2004 - December 2008</h4>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="content">
-                                    <h3>High School name</h3>
-                                    <p>Your School Name</p>
-                                    <p class="grade"><span>Grade:</span> .... </p>
+                                    <h3> Swarupkathi Collegiate Academy</h3>
+                                    <p> Swarupkati,Perojpur</p>
+                                    <p class="grade"><span>Grade:</span> 5.00 </p>
                                 </div>
                                 <div class="time">
-                                    <h4>January 2018 - December 2022</h4>
+                                    <h4>January 2009 - December 2015</h4>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="content">
-                                    <h3>College name</h3>
-                                    <p>Your School Name</p>
-                                    <p class="grade"><span>Grade:</span> .... </p>
+                                    <h3>Dania College</h3>
+                                    <p>Dania, Dhaka-1236</p>
+                                    <p class="grade"><span>Grade:</span> 4.75 </p>
                                 </div>
                                 <div class="time">
-                                    <h4>January 2018 - December 2022</h4>
+                                    <h4>January 2016 - December 2018</h4>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="content">
-                                    <h3>University name</h3>
-                                    <p>Daffodil International University</p>
-                                    <p class="grade"><span>Grade:</span> .... </p>
+                                    <h3>Daffodil International University</h3>
+                                    <p>Dhanmondi, Dhaka</p>
+                                    <p class="grade"><span>CGPA:</span> 3.80 </p>
                                 </div>
                                 <div class="time">
-                                    <h4>January 2018 - December 2022</h4>
+                                    <h4>January 2019 - December 2022</h4>
                                 </div>
                             </li>
                             <div style={{ "clear": "both" }}></div>

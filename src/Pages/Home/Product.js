@@ -13,8 +13,9 @@ const Product = ({ product }) => {
                 <img src={img} alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-                <h2 className="card-title text-primary">{name}</h2>
-                <small className='text-secondary'>Avaiable: {quantity}</small>
+                <h2 className="card-title text-primary">{name}
+                </h2>
+                <div class="badge badge-ghost font-semibold">Available: {quantity}</div>
                 <p>{desc}</p>
                 <p>Price: ${price}</p>
                 <p>Minimun Order: {min_order}</p>

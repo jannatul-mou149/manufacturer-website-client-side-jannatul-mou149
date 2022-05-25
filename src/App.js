@@ -13,7 +13,6 @@ import Footer from './Pages/Shared/Footer';
 import Purchase from './Pages/Purchase/Purchase';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrders from './Pages/Dashboard/MyOrders';
-import MyReviews from './Pages/Dashboard/MyReviews';
 import Review from './Pages/Dashboard/Review';
 import Users from './Pages/Dashboard/Users';
 import RequireAdmin from './Pages/Login/RequireAdmin';

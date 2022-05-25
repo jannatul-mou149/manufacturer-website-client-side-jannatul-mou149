@@ -55,15 +55,15 @@ const Purchase = () => {
                                 <sub className="text-secondary"> /piece</sub>
                             </p>
                         </div>
-                        <div className="flex gap-4 py-2">
+                        <div className="flex gap-4 py-2 font-semibold">
                             <div
-                                className="badge badge-outline tooltip text-white bg-[#d26833]"
+                                className="badge badge-ghost text-semibold"
                                 data-tip="Min order quantity"
                             >
                                 Min Order : {minQuantity}
                             </div>
                             <div
-                                className="badge badge-outline tooltip text-white bg-[#2b9e4a]"
+                                className="badge badge-success text-white"
                                 data-tip="Available quantity"
                             >
                                 In Stock : {stockQuantity}
