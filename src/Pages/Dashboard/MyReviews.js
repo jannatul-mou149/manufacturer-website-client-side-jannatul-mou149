@@ -14,7 +14,7 @@ const MyReviews = () => {
         <div className='mb-16'>
             <div className='text-center lg:mb-12 mb-5'>
                 <h2 className='text-primary text-3xl font-bold mb-2'>What Clients Say</h2>
-                <h4 className='text-xl'>We are always happy to hear your honest opinion about us!</h4>
+                <h4 className='font-semibold'>We accept your opinion of experience with us!</h4>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:mx-40 my-20'>
                 {
