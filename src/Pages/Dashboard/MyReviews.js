@@ -11,7 +11,7 @@ const MyReviews = () => {
             .then(data => setReviews(data));
     }, [])
     return (
-        <div className='mb-16'>
+        <div className='mb-40'>
             <div className='text-center lg:mb-12 mb-5'>
                 <h2 className='text-primary text-3xl font-bold mb-2'>What Clients Say</h2>
                 <h4 className='font-semibold'>We accept your opinion of experience with us!</h4>
