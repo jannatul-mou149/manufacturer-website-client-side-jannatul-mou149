@@ -19,6 +19,6 @@ This project is a retail selling website with both user and admin management sys
 
 ### Project Link
 
- - Client-side Repo Link: [Click here]()
- - Server-side Repo Link: [Click here]()
+ - Client-side Repo Link: [Click here](https://github.com/programming-hero-web-course1/manufacturer-website-client-side-jannatul-mou149)
+ - Server-side Repo Link: [Click here](https://github.com/programming-hero-web-course1/manufacturer-website-server-side-jannatul-mou149)
  - Live Site: [Click here]()

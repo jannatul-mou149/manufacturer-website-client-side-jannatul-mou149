@@ -33,25 +33,25 @@ const BusinessSummary = () => {
                 </div>
                 <div className="brands">
                     <div className="img">
-                        <img src='https://brilliantmaps.com/wp-content/uploads/2015/01/Flag_of_Turkey.png' alt="" />
+                        <img src='https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/headset-vector-icon-tim-hester.jpg' alt="" />
                     </div>
                     <div className="img">
-                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9FqlLlcrXSQVm0VT1KdfrV-dNfN7J0H6D9kohA1_UE_9oWsyU6JCTmknGb_XmIF58Wyc&usqp=CAU' alt="" />
+                        <img src='https://thumbs.dreamstime.com/b/computer-cpu-icon-flat-style-circuit-board-vector-illustration-white-isolated-background-motherboard-chip-business-concept-166726086.jpg' alt="" />
                     </div>
                     <div className="img">
-                        <img src='https://qph.cf2.quoracdn.net/main-qimg-3cccfc9fa3cd77f90e25473831360ca7' alt="" />
+                        <img src='https://png.pngtree.com/png-vector/20190331/ourlarge/pngtree-graphic-card-icon-outline-or-line-style-vector-illustration-png-image_876882.jpg' alt="" />
                     </div>
                     <div className="img">
-                        <img src='https://cdn.pixabay.com/photo/2021/05/28/01/08/samoa-6289545_960_720.png' alt="" />
+                        <img src='https://thumbs.dreamstime.com/b/laptop-icon-vector-mobile-computer-solid-logo-pictogram-isolat-isolated-white-pixel-perfect-illustration-95987791.jpg' alt="" />
                     </div>
                     <div className="img">
-                        <img src='https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg' alt="" />
+                        <img src='https://thumbs.dreamstime.com/b/computer-mouse-icon-computer-mouse-icon-computer-mouse-vector-illustration-139237470.jpg' alt="" />
                     </div>
                     <div className="img">
-                        <img src='https://cdn.britannica.com/34/4034-004-B478631E/Flag-Myanmar.jpg' alt="" />
+                        <img src='https://image.shutterstock.com/image-vector/keyboard-vector-icon-linear-sign-600w-1482708644.jpg' alt="" />
                     </div>
                     <div className="img">
-                        <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Flag_of_Malaysia.svg/1200px-Flag_of_Malaysia.svg.png' alt="" />
+                        <img src='https://www.creativefabrica.com/wp-content/uploads/2021/03/19/Computer-Office-Icon-Outline-illustratio-Graphics-9771156-1-1-580x387.jpg' alt="" />
                     </div>
                 </div>
 
