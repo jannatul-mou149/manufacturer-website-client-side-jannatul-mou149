@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
+import swal from 'sweetalert';
 import auth from '../../firebase.init';
 
 const ManageAllOrders = () => {
@@ -15,20 +16,33 @@ const ManageAllOrders = () => {
 
     }, [user]);
     const handleDelete = id => {
-        const proceed = window.confirm('Are you sure?');
-        if (proceed) {
-            const url = `http://localhost:5000/new-order/${id}`;
-            console.log(url);
-            fetch(url, {
-                method: 'DELETE'
-            })
-                .then(res => res.json())
-                .then(data => {
-                    console.log(data)
-                    const remaining = orders.filter(order => order._id !== id);
-                    setOrders(remaining);
-                })
-        }
+        swal({
+            title: "Are you sure?",
+            text: "Once deleted, you will not be able to recover this.",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    const url = `http://localhost:5000/new-order/${id}`;
+                    console.log(url);
+                    fetch(url, {
+                        method: 'DELETE'
+                    })
+                        .then(res => res.json())
+                        .then(data => {
+                            console.log(data)
+                            const remaining = orders.filter(order => order._id !== id);
+                            setOrders(remaining);
+                        })
+                    swal("Order has been canceled!", {
+                        icon: "success",
+                    });
+                } else {
+                    swal("Order remains as before!");
+                }
+            });
     }
     const handleStatus = (id) => {
         fetch(`http://localhost:5000/orders/${id}`, {

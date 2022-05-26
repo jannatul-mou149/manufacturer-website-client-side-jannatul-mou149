@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import swal from 'sweetalert';
 
 const ManageProducts = () => {
     const [products, setProducts] = useState([]);
@@ -9,20 +10,32 @@ const ManageProducts = () => {
             .then(data => setProducts(data))
     }, []);
     const handleDelete = id => {
-        const proceed = window.confirm('Are you sure?');
-        if (proceed) {
-            const url = `http://localhost:5000/products/${id}`;
-            console.log(url);
-            fetch(url, {
-                method: 'DELETE'
-            })
-                .then(res => res.json())
-                .then(data => {
-                    console.log(data)
-                    const remaining = products.filter(product => product._id !== id);
-                    setProducts(remaining);
-                })
-        }
+        swal({
+            title: "Are you sure?",
+            text: "Once deleted, you will not be able to recover this.",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    const url = `http://localhost:5000/products/${id}`;
+                    fetch(url, {
+                        method: 'DELETE'
+                    })
+                        .then(res => res.json())
+                        .then(data => {
+                            console.log(data)
+                            const remaining = products.filter(product => product._id !== id);
+                            setProducts(remaining);
+                        })
+                    swal("Order has been canceled!", {
+                        icon: "success",
+                    });
+                } else {
+                    swal("Order remains as before!");
+                }
+            });
     }
     return (
         <div className='mt-10'>
