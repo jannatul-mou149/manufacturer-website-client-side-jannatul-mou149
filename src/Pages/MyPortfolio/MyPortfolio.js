@@ -156,7 +156,6 @@ const MyPortfolio = () => {
                     </div>
                 </div>
             </section>
-
         </div>
     );
 };

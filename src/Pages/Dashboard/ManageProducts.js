@@ -29,11 +29,11 @@ const ManageProducts = () => {
                             const remaining = products.filter(product => product._id !== id);
                             setProducts(remaining);
                         })
-                    swal("Order has been canceled!", {
+                    swal("Product has been removed!", {
                         icon: "success",
                     });
                 } else {
-                    swal("Order remains as before!");
+                    swal("Product remains as before!");
                 }
             });
     }

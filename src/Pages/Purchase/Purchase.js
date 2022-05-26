@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from "../../firebase.init";
 import { toast } from 'react-toastify';
+import swal from 'sweetalert';
 
 
 const Purchase = () => {
@@ -32,7 +33,7 @@ const Purchase = () => {
         })
             .then(res => res.json())
             .then(data => console.log(data))
-        toast.success('Successfully Placed your Order. Please Do Payment for your order')
+        swal("Great!", "Your order is placed. Please do your payment", "success");
         reset()
     };
     // if(errors) console.log(errors);

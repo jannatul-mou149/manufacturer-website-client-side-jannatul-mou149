@@ -1,6 +1,7 @@
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
 import React, { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
+import swal from 'sweetalert';
 
 const CheckoutForm = ({ order }) => {
     const stripe = useStripe();
@@ -68,7 +69,7 @@ const CheckoutForm = ({ order }) => {
         else {
             setCardError('');
             setTransactionId(paymentIntent.id);
-            setSuccess('Congratulations! Your payment is recieved.');
+            swal("Congratulations", "Your Payment is recieved Successfully", "success")
 
             //Storing payment in mongodb
             const payment = {
@@ -114,12 +115,6 @@ const CheckoutForm = ({ order }) => {
             </form>
             {
                 cardError && <p className='text-error'>{cardError}</p>
-            }
-            {
-                success && <div className='text-success font-semibold'>
-                    <p>{success}</p>
-                    <small className='text-cyan-500'>Transaction ID: {transactionId}</small>
-                </div>
             }
         </>
     );
