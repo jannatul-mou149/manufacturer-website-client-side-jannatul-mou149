@@ -9,6 +9,7 @@ const MyProfile = () => {
 
 
     let email = user?.email;
+    const userImg = user?.photoURL;
 
     useEffect(() => {
         fetch(`http://localhost:5000/user/${email}`)
@@ -50,25 +51,33 @@ const MyProfile = () => {
 
     return (
         <div>
-            <h1 class="text-5xl font-bold text-center mb-2">My Profile</h1>
-
-            <div class="hero  bg-base-200">
-
-                <div class="hero-content flex-col lg:flex-row">
-                    <img src="https://api.lorem.space/image/movie?w=260&h=300" alt='profile' class="max-w-sm rounded-lg shadow-2xl" />
-                    <div>
-                        <h1 class="text-5xl font-bold">{singleUser?.name}</h1>
-                        <p className='text-3xl'><span className='font-bold'>LinkedIn:</span> {singleUser?.linkedIn}</p>
-                        <p className='text-3xl'><span className='font-bold'>Email Address:</span> {singleUser?.email}</p>
-                        <p className='text-3xl'><span className='font-bold'>Education:</span> {singleUser?.education}</p>
-                        <p className='text-3xl'><span className='font-bold'>Location:</span> {singleUser?.location}</p>
-                        <p className='text-3xl'><span className='font-bold'>Phone No:</span> {singleUser?.phone}</p>
-
+            <h1 class="text-5xl font-bold text-center">My Profile</h1>
+            <div class="flex h-screen justify-center">
+                <div className='pt-20'>
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                            <div class="avatar online">
+                                <div class="w-24 rounded-full">
+                                    <img src="https://api.lorem.space/image/face?hash=28212" />
+                                </div>
+                            </div>
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <div className='text-left'>
+                                <h1 class="font-bold text-center text-green-500 text-xl mb-6">{singleUser?.name}</h1>
+                                <p><span className='font-bold'>LinkedIn:</span> {singleUser?.linkedIn}</p>
+                                <p><span className='font-bold'>Email:</span> {singleUser?.email}</p>
+                                <p><span className='font-bold'>Education:</span> {singleUser?.education}</p>
+                                <p><span className='font-bold'>Location:</span> {singleUser?.location}</p>
+                                <p><span className='font-bold'>Phone No:</span> {singleUser?.phone}</p>
+                            </div>
+                            <a href="#update"><button class="btn btn-sm btn-outline btn-success mt-4">Update Profile</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div className='flex h-screen justify-center items-center'>
+            <div className='flex h-screen justify-center items-center' id='update'>
                 <div className="card w-96 bg-base-100 shadow-xl">
                     <div className="card-body">
                         <h2 className="text-center text-2xl font-bold">Edit Your Information</h2>
@@ -80,7 +89,6 @@ const MyProfile = () => {
                                 </label>
                                 <input
                                     type="text"
-
                                     defaultValue={singleUser?.name}
                                     placeholder="Your Name"
                                     className="input input-bordered w-full max-w-xs"
