@@ -36,30 +36,6 @@ const BusinessSummary = () => {
                             <h5>Total Feedback</h5>
                         </div>
                     </div>
-                    <div class="stats shadow-lg">
-                        <div class="stat  pl-20 pr-20">
-                            <div class="stat-title">Total Likes</div>
-                            <div class="stat-value">25.6K</div>
-                            <div class="stat-desc">21% more than last month</div>
-                        </div>
-
-                        <div class="stat pl-20 pr-20">
-                            <div class="stat-title">Page Views</div>
-                            <div class="stat-value">2.6M</div>
-                            <div class="stat-desc">21% more than last month</div>
-                        </div>
-                        <div class="stat pl-20 pr-20">
-                            <div class="stat-title">New Users</div>
-                            <div class="stat-value">63K</div>
-                            <div class="stat-desc">↗︎ 400 (22%)</div>
-                        </div>
-                        <div class="stat pl-20 pr-20">
-                            <div class="stat-title">New Registers</div>
-                            <div class="stat-value">1,200</div>
-                            <div class="stat-desc">↘︎ 90 (14%)</div>
-                        </div>
-
-                    </div>
                 </div>
                 <img className='img-fluid' id="map" src={map} alt="" />
             </div>

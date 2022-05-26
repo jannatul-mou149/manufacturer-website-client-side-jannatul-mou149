@@ -31,9 +31,28 @@ const ManageAllOrders = () => {
         }
     }
     const handleStatus = (id) => {
-        let btn = document.getElementById("myButton1");
-        btn.value = "Shipped";
-        btn.innerHTML = "Shipped"
+        fetch(`http://localhost:5000/orders/${id}`, {
+            method: "PUT",
+            headers: { "content-type": "application/json" }
+
+        })
+            .then(res => res.json())
+            .then(data => {
+                fetch('http://localhost:5000/orders', {
+                    method: 'GET',
+                    headers: {
+                        "authorization": `Bearer ${localStorage.getItem('accessToken')}`
+                    }
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data);
+                        setOrders(data)
+                    })
+
+                console.log(data)
+            }
+            )
     }
     return (
         <div>
@@ -76,7 +95,11 @@ const ManageAllOrders = () => {
                                             <p>Transaction ID:{order.transactionId} </p>
                                         </div>}
                                     </td>
-                                    <td>{(order.paid) && <button onClick={() => handleStatus(order._id)} className='btn btn-xs btn-error text-white' value="Pending" id="myButton1">Pending</button>}</td>
+                                    <td>
+                                        {
+                                            <button onClick={() => handleStatus(order._id)} className='btn btn-xs btn-outline btn-primary text-white'>{!order.status ? 'Pending' : 'Shipped'}</button>
+                                        }
+                                    </td>
                                     <td>{(!order.paid) && <button onClick={() => handleDelete(order._id)}
                                         className='btn btn-xs btn-error text-white'>Cancel</button>}</td>
                                 </tr>)
