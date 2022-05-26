@@ -74,13 +74,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 70px;
     flex-wrap: wrap;
     margin-bottom: 70px;
 }
 
+.number {
+    margin: 0 50px;
+    margin-bottom: 20px;
+}
+
 .numbers .number i {
-    font-size: 3rem;
+    font-size: 2rem;
     color: rgb(79 70 229);
     margin-bottom: 10px;
 }
