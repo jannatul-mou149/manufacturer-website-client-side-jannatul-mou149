@@ -148,7 +148,7 @@ const MyPortfolio = () => {
                                 <div class="links">
                                     <ul>
                                         <li><a href="https://github.com/programming-hero-web-course1/manufacturer-website-client-side-jannatul-mou149" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                                        <li><a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                                        <li><a href="https://assignment-12-d4620.web.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
                                     </ul>
                                 </div>
                             </div>

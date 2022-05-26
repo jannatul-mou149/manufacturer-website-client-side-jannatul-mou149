@@ -10,7 +10,7 @@ const stripePromise = loadStripe('pk_test_51L1PDhEp4W2slfIM4psM8jfWXFjunE88de7eJ
 
 const Payment = () => {
     const { id } = useParams();
-    const url = `http://localhost:5000/new-order/${id}`;
+    const url = `https://pure-cliffs-15419.herokuapp.com/new-order/${id}`;
 
     const { data: order, isLoading } = useQuery(['new-order', id], () => fetch(url).then(res => res.json()));
     if (isLoading) {

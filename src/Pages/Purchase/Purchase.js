@@ -12,7 +12,7 @@ const Purchase = () => {
     const [product, setProduct] = useState({});
     const [user] = useAuthState(auth);
     useEffect(() => {
-        const url = `http://localhost:5000/products/${id}`;
+        const url = `https://pure-cliffs-15419.herokuapp.com/products/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data));
@@ -26,7 +26,7 @@ const Purchase = () => {
         const total_price = order.quantity * order.price;
         order = { ...order, total_price };
         console.log(order);
-        fetch('http://localhost:5000/new-order', {
+        fetch('https://pure-cliffs-15419.herokuapp.com/new-order', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(order),

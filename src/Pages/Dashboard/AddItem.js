@@ -9,7 +9,7 @@ const AddItem = () => {
     const { register, handleSubmit } = useForm();
     const [user] = useAuthState(auth);
     const onSubmit = data => {
-        const url = `http://localhost:5000/products`;
+        const url = `https://pure-cliffs-15419.herokuapp.com/products`;
         fetch(url, {
             method: 'POST',
             headers: {

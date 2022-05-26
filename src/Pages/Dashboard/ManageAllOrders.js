@@ -9,7 +9,7 @@ const ManageAllOrders = () => {
     const [user] = useAuthState(auth);
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/orders`)
+            fetch(`https://pure-cliffs-15419.herokuapp.com/orders`)
                 .then(res => res.json())
                 .then(data => setOrders(data))
         }
@@ -25,7 +25,7 @@ const ManageAllOrders = () => {
         })
             .then((willDelete) => {
                 if (willDelete) {
-                    const url = `http://localhost:5000/new-order/${id}`;
+                    const url = `https://pure-cliffs-15419.herokuapp.com/new-order/${id}`;
                     console.log(url);
                     fetch(url, {
                         method: 'DELETE'
@@ -45,14 +45,14 @@ const ManageAllOrders = () => {
             });
     }
     const handleStatus = (id) => {
-        fetch(`http://localhost:5000/orders/${id}`, {
+        fetch(`https://pure-cliffs-15419.herokuapp.com/orders/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" }
 
         })
             .then(res => res.json())
             .then(data => {
-                fetch('http://localhost:5000/orders', {
+                fetch('https://pure-cliffs-15419.herokuapp.com/orders', {
                     method: 'GET',
                     headers: {
                         "authorization": `Bearer ${localStorage.getItem('accessToken')}`

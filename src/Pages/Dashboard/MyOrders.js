@@ -9,7 +9,7 @@ const MyOrders = () => {
     const [user] = useAuthState(auth);
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/new-order?email=${user.email}`)
+            fetch(`https://pure-cliffs-15419.herokuapp.com/new-order?email=${user.email}`)
                 .then(res => res.json())
                 .then(data => setOrders(data))
         }
@@ -25,7 +25,7 @@ const MyOrders = () => {
         })
             .then((willDelete) => {
                 if (willDelete) {
-                    const url = `http://localhost:5000/new-order/${id}`;
+                    const url = `https://pure-cliffs-15419.herokuapp.com/new-order/${id}`;
                     console.log(url);
                     fetch(url, {
                         method: 'DELETE'

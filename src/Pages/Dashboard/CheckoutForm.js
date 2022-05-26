@@ -14,7 +14,7 @@ const CheckoutForm = ({ order }) => {
     const { _id, total_price, name, email } = order;
 
     useEffect(() => {
-        fetch('http://localhost:5000/create-payment-intent', {
+        fetch('https://pure-cliffs-15419.herokuapp.com/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -76,7 +76,7 @@ const CheckoutForm = ({ order }) => {
                 order: _id,
                 transactionId: paymentIntent.id
             }
-            fetch(`http://localhost:5000/new-order/${_id}`, {
+            fetch(`https://pure-cliffs-15419.herokuapp.com/new-order/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'
