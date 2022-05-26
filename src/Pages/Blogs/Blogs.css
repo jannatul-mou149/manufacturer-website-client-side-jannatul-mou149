@@ -5,8 +5,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.container {
-    width: min(1600px, 75%);
+.blog-container {
+    width: min(1600px, 95%);
     margin: auto;
 }
 
@@ -20,7 +20,7 @@ a {
 
 
 .blog-posts-wrap {
-    width: 800px;
+    width: min(800px, 100%);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
