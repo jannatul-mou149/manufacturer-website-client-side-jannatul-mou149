@@ -58,7 +58,7 @@ const MyProfile = () => {
                         <figure class="px-10 pt-10">
                             <div class="avatar online">
                                 <div class="w-24 rounded-full">
-                                    <img src="https://api.lorem.space/image/face?hash=28212" />
+                                    <img src="https://zetamu.pse.org/wp-content/uploads/2019/02/1041_boy_c-512.png" />
                                 </div>
                             </div>
                         </figure>
