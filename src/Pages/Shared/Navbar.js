@@ -27,7 +27,7 @@ const Navbar = () => {
     </>
     return (
         <div>
-            <div className="navbar text-violet-900 px-12">
+            <div className="navbar text-violet-900 lg:px-12">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabindex="0" className="btn btn-ghost lg:hidden">
@@ -37,11 +37,11 @@ const Navbar = () => {
                             {menuItems}
                         </ul>
                     </div>
-                    <Link to="/" className="btn btn-ghost normal-case text-xl">Dream PC Build</Link>
+                    <Link to="/" className="btn btn-ghost normal-case lg:text-xl sm:text-sm">Dream PC Build</Link>
                 </div>
-                <div className="navbar-center">
+                <div className="navbar-end sm:text-xs">
                     <label tabIndex="1" for="dashboard-sidebar" className="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>Expand Dashboard
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>Expand
                     </label>
                 </div>
                 <div className="navbar-end hidden lg:flex">
@@ -49,7 +49,6 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-
             </div>
         </div>
     );
